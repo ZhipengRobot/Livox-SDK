@@ -132,6 +132,11 @@ int main(int argc, const char *argv[]) {
 
   LdsLidar& read_lidar = LdsLidar::GetInstance();
 
+  // InitLdsLidar:
+  //    Init
+  //    SetBroadcastCallback
+  //    SetDeviceStateUpdateCallback
+  //    Start
   int ret = read_lidar.InitLdsLidar(cmdline_broadcast_code);
   if (!ret) {
     printf("Init lds lidar success!\n");

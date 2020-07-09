@@ -171,6 +171,7 @@ void OnDeviceInfoChange(const DeviceInfo *info, DeviceEvent type) {
     return;
   }
   if (type == kEventConnect) {
+    // Query the firmware version of Livox LiDAR and update devices[].device_state and devices[].info
     LidarConnect(info);
     printf("[WARNING] Lidar sn: [%s] Connect!!!\n", info->broadcast_code);
   } else if (type == kEventDisconnect) {
@@ -207,6 +208,8 @@ void OnDeviceBroadcast(const BroadcastDeviceInfo *info) {
 
   printf("Receive Broadcast Code %s\n", info->broadcast_code);
 
+  // Zhipeng: lidar_count == 0: Connect all the broadcast device
+  // Zhipeng: lidar_count > 0: Connect the broadcast device in list, please input the broadcast code and modify the BROADCAST_CODE_LIST_SIZE.
   if (lidar_count > 0) {
     bool found = false;
     int i = 0;

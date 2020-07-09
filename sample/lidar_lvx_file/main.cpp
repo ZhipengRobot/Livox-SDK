@@ -407,10 +407,12 @@ int main(int argc, const char *argv[]) {
   }
   printf("Start discovering device.\n");
 
+  // Wait only 2 second
   WaitForDevicesReady();
 
   AddDevicesToConnect();
 
+  // If no device connected, return
   if (connected_lidar_count == 0) {
     printf("No device will be connected.\n");
     Uninit();
