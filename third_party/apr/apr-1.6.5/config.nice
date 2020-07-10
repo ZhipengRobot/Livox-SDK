@@ -1,0 +1,18 @@
+#! /bin/sh
+#
+# Created by configure
+
+CC="/usr/bin/arm-linux-gnueabi-gcc"; export CC
+"./configure" \
+"CC=/usr/bin/arm-linux-gnueabi-gcc" \
+"--host=arm-linux" \
+"--prefix=/home/zhipeng/VTOL/03.payload-part/05.livox/mine/Livox-SDK/third_party/apr" \
+"ac_cv_file__dev_zero=yes" \
+"ac_cv_func_setpgrp_void=yes" \
+"apr_cv_tcp_nodelay_with_cork=yes" \
+"ac_cv_sizeof_struct_iovec=8" \
+"apr_cv_mutex_recursive=yes" \
+"apr_cv_mutex_robust_shared=no" \
+"apr_cv_process_shared_works=yes" \
+"host_alias=arm-linux" \
+"$@"

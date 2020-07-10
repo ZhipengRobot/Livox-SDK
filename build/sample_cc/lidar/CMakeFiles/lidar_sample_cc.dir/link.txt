@@ -1,0 +1,1 @@
+/usr/bin/arm-linux-gnueabi-g++    -pthread   CMakeFiles/lidar_sample_cc.dir/main.cpp.o CMakeFiles/lidar_sample_cc.dir/lds_lidar.cpp.o  -o lidar_sample_cc -rdynamic ../../sdk_core/liblivox_sdk_static.a ../../../third_party/apr/lib/libapr-1.so -Wl,-rpath,/home/zhipeng/VTOL/03.payload-part/05.livox/mine/Livox-SDK/third_party/apr/lib 

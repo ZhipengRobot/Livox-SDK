@@ -155,7 +155,7 @@ int main(int argc, const char *argv[]) {
 #endif
 
 /** Set Synchro's Baudrate: 9600. */
-  synchro.SetBaudRate(BR9600);
+  synchro.SetBaudRate(BR115200);
 /** Set Synchro's Parity: No parity (8N1). */
   synchro.SetParity(P_8N1);
 /** SyncTimer Callback will trigger when Synchro's GPRMC/GNRMC signal is ready. */

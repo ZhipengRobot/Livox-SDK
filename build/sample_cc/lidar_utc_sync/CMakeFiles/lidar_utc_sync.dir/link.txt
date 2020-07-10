@@ -1,0 +1,1 @@
+/usr/bin/arm-linux-gnueabi-g++    -pthread -pthread   CMakeFiles/lidar_utc_sync.dir/main.cpp.o CMakeFiles/lidar_utc_sync.dir/lds_lidar.cpp.o CMakeFiles/lidar_utc_sync.dir/synchro.cpp.o  -o lidar_utc_sync -rdynamic ../../sdk_core/liblivox_sdk_static.a ../../../third_party/apr/lib/libapr-1.so -Wl,-rpath,/home/zhipeng/VTOL/03.payload-part/05.livox/mine/Livox-SDK/third_party/apr/lib 

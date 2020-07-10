@@ -1,0 +1,11 @@
+PKG="ASFapr-1"
+NAME="apr"
+ARCH="arm"
+VERSION="1.6.5"
+CATEGORY="application"
+VENDOR="Apache Software Foundation"
+EMAIL="dev@apr.apache.org"
+PSTAMP="dev@apr.apache.org"
+BASEDIR="/home/zhipeng/VTOL/03.payload-part/05.livox/mine/Livox-SDK/third_party/apr"
+CLASSES="none"
+
